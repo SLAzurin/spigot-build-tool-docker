@@ -1,1 +1,0 @@
-docker buildx build --no-cache --load -t spigotbuilder:latest .

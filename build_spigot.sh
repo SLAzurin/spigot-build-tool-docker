@@ -1,1 +1,1 @@
-docker run --rm -v "$(pwd):/out/" spigotbuilder:latest 
+docker buildx build --pull --no-cache --load -t spigotbuilder:latest . && docker run --rm -v "$(pwd):/out/" spigotbuilder:latest && docker image rm spigotbuilder:latest
